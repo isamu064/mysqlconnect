@@ -59,12 +59,27 @@ namespace MysqlConnect
 			}
 
 			string command;
-			Console.WriteLine ("Połączono do bazy {0}", database);
-			while (key.Key != ConsoleKey.Q) {
-				Console.Write ("> ");
-				command = Console.ReadLine ();
-			}
 
+			Console.WriteLine ("Połączono do bazy {0}", database);
+			Console.WriteLine ("Wpisz Q żeby wyjsc");
+
+			do {
+				Console.Write("> ");
+				command = Console.ReadLine();
+
+				try {
+					MySqlCommand cmd = new MySqlCommand(command, conn);
+					MySqlDataReader rdr = cmd.ExecuteReader();
+					while(rdr.Read()) {
+						Console.WriteLine(rdr[0]+" -- "+rdr[1]);
+					}
+					rdr.Close();
+				} catch(Exception ex) {
+					Console.WriteLine(ex.ToString());
+				}
+			} while(command != "Q");
+
+			conn.Close ();
 		}
 	}
 }
