@@ -10,3 +10,9 @@
 /home/sysek/Dokumenty/MysqlConnect/MysqlConnect/obj/x86/Debug/MysqlConnect.exe
 /home/sysek/Dokumenty/MysqlConnect/MysqlConnect/obj/x86/Debug/MysqlConnect.exe.mdb
 /home/sysek/Dokumenty/MysqlConnect/MysqlConnect/bin/Debug/MySql.Data.dll
+/home/sysek/Dokumenty/mysqlconnect/MysqlConnect/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/sysek/Dokumenty/mysqlconnect/MysqlConnect/bin/Debug/MysqlConnect.exe.mdb
+/home/sysek/Dokumenty/mysqlconnect/MysqlConnect/bin/Debug/MysqlConnect.exe
+/home/sysek/Dokumenty/mysqlconnect/MysqlConnect/obj/x86/Debug/MysqlConnect.exe
+/home/sysek/Dokumenty/mysqlconnect/MysqlConnect/obj/x86/Debug/MysqlConnect.exe.mdb
+/home/sysek/Dokumenty/mysqlconnect/MysqlConnect/bin/Debug/MySql.Data.dll

@@ -70,8 +70,9 @@ namespace MysqlConnect
 				try {
 					MySqlCommand cmd = new MySqlCommand(command, conn);
 					MySqlDataReader rdr = cmd.ExecuteReader();
-					while(rdr.Read()) {
-						Console.WriteLine(rdr[0]+" -- "+rdr[1]);
+					for(int i = 0; i < rdr.FieldCount; i++) {
+						rdr.Read();
+						Console.WriteLine("{0}", rdr[i]);
 					}
 					rdr.Close();
 				} catch(Exception ex) {
